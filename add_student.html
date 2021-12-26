@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Accueil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <!-- Image and text -->
+
+    <a class="navbar-brand" href="#">
+      <img src="img/INS.png" width="30" height="30" class="d-inline-block align-top  " alt="">
+      
+    </a>
+  
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">INS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">add students </a></li>
+      <li><a href="#">add teachers </a></li>
+      <li><a href="#">show students list </a></li>
+      <li><a href="#">show teachers list </a></li>
+      <li class="mr-2" ><a href="#">log out</a></li>
+      
+    </ul>
+    
+  </div>
+  
+</nav>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Gestion de stagiaire</a>
+      </div>
+      
+    </div>
+</nav>
+
+<!-- input-->
+
+
+
+<div class="container">
+    <h4 class="text-danger" ><b>Gestion des Stagiaires</b></h4>
+    <p class="text-success" ><b><u><i class="fa fa-user-graduate"></i> Information Classe Stagiaire</u></b></p>
+    <form>
+      
+      <div class="form-group">
+        <label for="sel1">Année Scolaire</label>
+        <select class="form-control" id="sel1">
+          <option>2019/2020</option>
+          <option>2020/2021</option>
+          <option>2021/2022</option>
+          <option>4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sel2">Classe</label>
+        <select class="form-control" id="sel2">
+          <option>1 ére année</option>
+          <option>2 éme année</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sel3">Type Formation</label>
+        <select class="form-control input-sm" id="sel3">
+          <option>Cours du jour</option>
+          <option>Cours du Soir</option>
+        </select>
+        </div>
+        <div class="form-group">
+            <label for="sel3">Filière</label>
+            <select class="form-control input-sm" id="sel3">
+              <option>TS - Technicien Specialise en Systemes et Reseaux</option>
+              <option>T - Technicien en Gestion Informatisee</option>
+              <option>Q - Operateur de Saisie</option>
+            </select>
+      </div>
+      <!-- nav information du stagiaire-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">informations sur le stagiaire</a>
+          </div>
+          
+        </div>
+    </nav>
+
+
+      <!-- end nav information du stagiaire-->
+
+
+      <div class="form-group row ">
+        <div class="col-xs-4">
+          <label for="ex1">Type identifiant * </label>
+          <select class="form-control input-sm" id="sel3">
+            <option>CIN</option>
+            <option>Carte Séjour</option>
+            <option>Passeport</option>
+          </select>
+        </div>
+        <div class="col-xs-2">
+          <label for="ex2">N° identifiant *</label>
+          <input class="form-control" id="ex2" type="text" placeholder="L000000">
+        </div>
+        <div class="col-xs-6">
+            <label for="ex2">* الاسم العائلي</label>
+            <input class="form-control" id="ex2" type="text">
+        </div>
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-4">
+          <label for="ex1"> Date Entrée au Maroc </label>
+          <input class="form-control" id="ex2" type="text" placeholder="00/00/00">
+        </div>
+        <div class="col-xs-2">
+          <label for="ex2">Date Expiration</label>
+          <input class="form-control" id="ex2" type="text" placeholder="00/00/00">
+        </div>
+        <div class="col-xs-6">
+            <label for="ex2">* الاسم الشخصي</label>
+            <input class="form-control" id="ex2" type="text">
+        </div>
+        
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+          <label for="ex1"> ID MASSAR </label>
+          <input class="form-control" id="ex2" type="text">
+        </div>
+        <div class="col-xs-6">
+            <label for="ex2">العنوان</label>
+            <input class="form-control" id="ex2" type="text">
+        </div>
+        
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+            <label for="ex1"> Nom *</label>
+            <input class="form-control" id="ex2" type="text" placeholder="le nom ...">
+        </div>
+        <div class="col-xs-6">
+            <label for="ex1"> choice *</label><br>
+            <label class="checkbox-inline"><input type="checkbox" value="">Contribution</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Licencié</label><br>
+            <label class="checkbox-inline"><input type="checkbox" value="">Passerelle</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Redoublant</label> 
+        </div>
+     
+    </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+          <label for="ex1"> Prénom *</label>
+          <input class="form-control" id="ex2" type="text" placeholder="le prénom ...">
+        </div>
+
+        
+            <div class="col-xs-3">
+              <label for="ex1">N° d'inscription *</label>
+              <input class="form-control" id="ex2" type="text" placeholder="510/20">
+            </div>
+            <div class="col-xs-3">
+                <label for="ex1">Date Inscription</label>
+                <input class="form-control" id="ex2" type="text" placeholder="10/09/2020">
+            </div>
+     </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+          <label for="ex1"> Addresse *</label>
+          <input class="form-control" id="ex2" type="text" placeholder="Address ...">
+        </div>
+        <br>
+        <div class="col-xs-6">
+          <label for="ex1"><u><b><h4>Catégories Socio-Professionnelles du Tuteur</h4></b></u></label>
+          <br>
+          
+        </div>
+    </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+          <label for="ex1"> Ville </label>
+          <select class="form-control input-sm" id="sel3">
+            <option>Oued laou</option>
+            <option>Tétouan</option>
+            <option>Tanger</option>
+            <option>Chaouan</option>
+            <option>Nador</option>
+            <option>Casa blanca</option>
+            <option>Houssima</option>
+            <option>Meknes</option>
+            <option>Fes</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+            <label for="ex1">Profession du Pére</label>
+            <select class="form-control input-sm" id="sel3">
+                <option>Employee</option>
+                
+              </select>
+            
+          </div>
+          <div class="col-xs-3">
+              <label for="ex1">Tranche Salaire</label>
+              <select class="form-control input-sm" id="sel3">
+                <option>poor</option>
+                <option>moyen</option>
+                <option>rich</option>
+                
+              </select>
+              
+          </div>
+        
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-3">
+          <label for="ex1">Tél</label>
+          <input class="form-control" id="ex2" type="text" placeholder="0666666666">
+        </div>
+        <div class="col-xs-3">
+            <label for="ex1">Mail</label>
+            <input class="form-control" id="ex2" type="text">
+        </div>
+        <div class="col-xs-3">
+            <label for="ex1">Profession du Mére</label>
+            <select class="form-control input-sm" id="sel3">
+                <option>Employee</option>
+                
+              </select>
+            
+          </div>
+          <div class="col-xs-3">
+              <label for="ex1">Tranche Salaire</label>
+              <select class="form-control input-sm" id="sel3">
+                <option>poor</option>
+                <option>moyen</option>
+                <option>rich</option>
+                
+              </select>
+              
+          </div>
+        
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-3">
+          <label for="ex1">Sexe *</label>
+          
+            <select class="form-control input-sm" id="sel3">
+                <option>Masculin</option>
+                <option>Féminile</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+            <label for="ex1">Nationalité</label>
+           
+                <select class="form-control input-sm" id="sel3">
+                    <option>Marocaine</option>
+                    <option>Algérian</option>
+                    <option>Tounisian</option>
+                </select>
+        </div>
+        
+       
+      </div>
+
+      <!-- final test-->
+      <div class="form-group row ">
+        <div class="col-xs-3">
+          <label for="ex1">Date de naissance *</label>
+          <input class="form-control" id="ex2" type="text" placeholder="01/01/1999">
+          
+            
+        </div>
+        <div class="col-xs-3">
+            <label for="ex1">Lieu</label>
+           
+                <select class="form-control input-sm" id="sel3">
+                    <option>Oued laou</option>
+                    <option>Tétouan</option>
+                    <option>Tanger</option>
+                    <option>Chaouan</option>
+                    <option>Houssima</option>
+                    <option>Nador</option>
+                </select>
+        </div>
+        
+       
+      </div>
+
+      <div class="form-group row ">
+        <div class="col-xs-6">
+          <label for="ex1"> Niveau scolaire *</label>
+          <select class="form-control input-sm" id="sel3">
+            <option>1 ére année primaire</option>
+            <option>2 éme année primaire</option>
+            <option>3 éme année primaire</option>
+            <option>1 ére année dy Baccalauréat </option>
+            <option>1 ére année dy Baccalauréat </option>
+            <option>1 ére année dy Baccalauréat </option>
+            <option>Bac + 2</option>
+            <option>Bac + 3</option>
+            <option>bac + 5</option>
+            <option>Technicien</option>
+            <option>Qualification</option>
+            <option>Spécialisation</option>
+            <option>Bac Professionnel</option>
+            
+          </select>
+        </div>
+        
+       
+      </div>
+
+    <!-- liste des documents stagiaire-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Liste des Documents Stagiaires </a>
+          </div>
+          
+        </div>
+    </nav>
+
+
+
+    <div class="form-group row ">
+        <div class="col-xs-6">
+          
+          <label for="exampleFormControlFile1">Documents</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+       
+        </div>
+        
+       
+    </div>
+
+    <div class="form-group row ">
+        <div class="col-xs-6">
+          
+          <label for="exampleFormControlFile1">Type Document</label>
+          <select class="form-control input-sm" id="sel3">
+            <option>Certificat de solarité</option>
+            <option>Relevé de Note</option>
+            <option>CIN</option>
+            <option>Passe Sanitaire</option>
+            <option>Autre</option>
+            
+            
+          </select>
+            
+       
+        </div>
+        
+       
+    </div>
+
+
+      
+      
+      
+
+     
+
+
+      
+    </form>
+  </div>
+
+
+
+
+<!--informations sur le stagiaire-->
+
+
+
+
+
+    
+  
+
+</body>
+</html>
